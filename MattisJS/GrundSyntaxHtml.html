@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="uppgift1till8.css">
+    <title>Matti Uppgift</title>
+    <!-- importera jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        
+</head>
+
+<body>
+    <header>
+        <h1 id="Rubrik">Matti | Individuell inlämningsuppgift |</h1>
+    </header>
+    <main>       
+            <section> 
+                <p id ="u1">Övning 1 | For loop - Klicka på texten, resultat i konsollen.</p>
+            </section>
+            <section>
+                <p id ="u2">Övning 2 | Multiplikationstabellen med for-for loop - Klicka på texten, resultat i konsollen.</p>
+            </section>
+            <section>
+                <p id ="u3">Övning 3 | Gissa talet 1 till 100 - Klicka på texten, interaktion med prompt-rutor.</p>
+            </section>
+            <section>
+                <p id="u4">Övning 4 | Rövarspråksöversättningen - Klicka på texten, interaktion med prompt-rutor,extra info i konsollen.</p>
+            </section>
+            <section>
+                <p id="u5"> Övning 5 | Person och Student - Klick på denna text skapar en Person från mallen (class) Person och en Student från mallen (class) Student. Syns i konsol.<br>
+                    Efter att detta gjorts, kan du anropa Person - funktionerna.</p>
+                
+                <p id="PersonHälsa">Kolla person - hälsa</p>
+                <p id="PersonLedig">Kolla person - ledighet</p>
+                <p id="StudentStuderar">Kolla student - studerar</p>
+                <p id="StudentLunchar"> Kolla student - lunch</p>
+                <p id="StudentSamtal">Kolla student - samtal med Handledare</p><br>
+                <p id="NyPerson">OBS! Extragrej - Lägg till ny person - Detta är något jag gjorde vid sidan av, lägger till personer till en array via prompt-fönster-input.</p>
+            </section>
+            <section>
+                <p id="u6a">Uppgift 6a | - Rövarspråket i Formulär - | 1.skriv, 2.knapp</p>
+                <form name="Rövarspråket" action="" method="get">Skriv in det du vill ha översatt till rövarspråk: <BR>
+                    <input type="text" name="inputbox" value=""><P>
+                    <input type="button" name="button" value="Rövarspråka!" onClick="uppgiftSexA(this.form)">
+                </form>
+                <p id="rovarSvar"></p>
+
+            </section>
+            <section>
+                <p id="u6b">Uppgift 6b | - Gissa talet i Formulär - | Tryck först på "Nytt spel" för att starta!</p>
+                
+                <form name="GissaTalet" action="" method="get">Gissa talet, 1 - 100. <BR>
+                    <input type="text" name="gissabox" value=""><P>
+                    <input type="button" name="button" id="NyttSpel" value="Nytt spel" onClick="uppgiftSexBMain();">
+                    <input type="button" name="button" value="Gissa!" onClick="uppgiftSexB(this.form);">
+                </form>
+                
+                <p id="gissningsFeedback"></p>
+                
+            </section>
+            <section>
+            <a href="testaResa.html" target="_blank">Resebokning -  öppnar ny sida!
+            </section>
+            <!-- skript här om det ej fungerar-->
+            <script src="GrundläggandeSyntax.js"></script>     
+    </main>
+    <footer></footer>
+    </body>
+    
+</html>

@@ -1,0 +1,20 @@
+#Rubrik{
+    padding: 4px;
+    border-bottom: solid black;
+    border-width: 2px;
+}
+
+section{
+    padding: 10px;
+    border-bottom: solid black;
+    border-width: 2px;
+}
+
+#rovar{
+    width: 40%;
+    padding: auto;
+}
+#NyttSpel{
+    margin-bottom: 10px;
+}
+
