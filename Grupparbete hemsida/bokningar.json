@@ -1,0 +1,42 @@
+[
+  {
+    "datum_received": "2021-12-11",
+    "antal_received": "1",
+    "tid_received": "16:45",
+    "namn_received": "Jag%20Argsson",
+    "epost_received": "hurra%40mig.nu",
+    "meddelande_received": "We%20gon%26%23x27%3B%20party%20like%20it%26%23x27%3Bs%20mah%20BIRTHDAYYY"
+  },
+  {
+    "datum_received": "2021-12-12",
+    "antal_received": "2",
+    "tid_received": "15:15",
+    "namn_received": "matti%20heinonen",
+    "epost_received": "matti.heinonen%40gmail.com",
+    "meddelande_received": "detta%20%C3%A4r%20lite%20till%C3%A4gg"
+  },
+  {
+    "datum_received": "2021-12-12",
+    "antal_received": "2",
+    "tid_received": "15:35",
+    "namn_received": "matti%20heinonen",
+    "epost_received": "matti.heinonen%40gmail.com",
+    "meddelande_received": "h%C3%A4r%20kommer%20en%20krokodilk%C3%A4ft%20%C3%A5t%20var%20sitt%20h%C3%A5ll%3A%26gt%3B%20och%20%26lt%3B"
+  },
+  {
+    "datum_received": "2021-12-15",
+    "antal_received": "3",
+    "tid_received": "17:30",
+    "namn_received": "Honungs%20Tablett",
+    "epost_received": "kanel%40te.com",
+    "meddelande_received": "Krokodil"
+  },
+  {
+    "datum_received": "2021-12-28",
+    "antal_received": "5",
+    "tid_received": "20:00",
+    "namn_received": "Testar%20Testare",
+    "epost_received": "va%40hej.d%C3%A5",
+    "meddelande_received": "rullgardin%20123"
+  }
+]

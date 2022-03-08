@@ -1,0 +1,34 @@
+{
+  "name": "grupparbete-6",
+  "version": "1.0.0",
+  "description": "Grupp 6 grupparbete i kursen JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomtemor/pang.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node",
+    "webbserver"
+  ],
+  "author": "Christer Klasson, Ida Gustafsson, Julia Magnusson, Marianne Nordlund, Matti Heinonen, Ronja Österback",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomtemor/pang/issues"
+  },
+  "homepage": "https://github.com/tomtemor/pang#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,136 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-info {
+  width: 85vw;
+}
+
+div {
+  display: flex;
+  padding: 5px 0px;
+}
+
+.open p,
+.number p,
+.address p {
+  padding-left: 20px;
+}
+
+.contact-form {
+  margin-top: 25px;
+}
+
+form {
+  height: 75vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form p {
+  font-style: italic;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5em;
+  border: silver solid 1px;
+  background: white;
+  border-radius: 8px;
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 25px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #e3a157;
+  color: black;
+}
+
+button:hover {
+  background-color: #e7b071;
+}
+
+.social-media-links {
+  margin: 15px 0px 10px 0px;
+}
+
+/* Font Awesome social media icons */
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) {
+  .contact-info {
+    width: 60vw;
+  }
+
+  form {
+    height: 72vh;
+    width: 60vw;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  main h2 {
+    margin-bottom: 35px;
+  }
+
+  .contact-info {
+    width: 50vw;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+  form {
+    height: 62vh;
+    width: 50vw;
+  }
+}

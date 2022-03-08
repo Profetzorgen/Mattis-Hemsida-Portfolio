@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="SV">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pang i grillen - FAQ</title>
+    <meta name="description" content="Best roadkill restaurant in Sweden" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/FAQ.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="logo">PANG I GRILLEN</h1>
+        <!--Logotyp/texten högst upp, samma på alla sidor-->
+        <input type="checkbox" id="menubox" />
+        <label class="menu-icon" for="menubox"
+          ><span class="nav-icon"></span
+        ></label>
+        <nav>
+          <!--Här under är länkarna till varje delsida på hemsidan-->
+          <ul>
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./meny.html">Meny</a></li>
+            <li><a href="./bokning.html">Bokning</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!--Min sida är FAQ eller Frågor och Svar-->
+        <h2 class="FAQ-titel">Frågor och svar</h2>
+        <img
+          src="./images/FAQ1.jpg"
+          alt="test"
+          width="360"
+          class="bilder"
+        /><!--Bild på förvirrad karl-->
+
+        <div class="IntroFAQ">
+          <!--Beskrivande introtext-->
+          Här listar vi de vanligaste frågorna, klicka på frågan för att se
+          svaret! Om frågan du har inte finns med i listan, hör av dig till oss
+          på vår Kontakta Oss-sida.<br /><br />
+        </div>
+        <!--Här börjar frågorna, 
+                    använder Accordion-meny med JavaScript för klicka fram/bort svaren på frågorna-->
+        <button class="klicklista">
+          Får man ta med sig vilket djur som helst?
+        </button>
+        <div class="panel">
+          <p>
+            Vid förekommet tillfälle, kontrollera djurets skick enligt listan på
+            nästa fråga.<br />
+            Älg, Hjort, Rådjur, Ekorre, Bäver och Grävling bör inte vara något
+            problem, hör av dig till via kontaktsidan om du har ett annat djur
+            eller frågor!<br />
+            Vårt koncept går ut på att mycket ska komma från naturen så vi tar
+            gärna även emot fisk och skaldjur!
+          </p>
+        </div>
+
+        <button class="klicklista">Hur avgör jag om djuret är ätbart?</button>
+        <div class="panel">
+          <p>
+            Är du jägare eller har erfarenhet av viltslakt eller dylikt, kan du
+            läsa vidare i annat fall, hör av dig till oss!<br />
+            Några tumregler att hålla koll på iallafall är:<br />
+            1: Har djuret klara ögon? Då är det fortfarande färskt, över till
+            nästa steg.<br />
+            2: Är det tillräckligt helt, dvs gallblåsa, urinblåsa har inte
+            förstörts i olyckan?<br />
+            Är någon av dessa trasiga är köttet kasst!<br />
+            3: Luktar djuret inte heller illa är det med största sannolikhet
+            OK!<br />
+            4: Konsultera vår jägare/köttmästare om allt verkar stämma och kom
+            överens om upphämtning om du inte kan köra djuret själv.<br />
+            OBS! Ett vilt djur har ofta loppor och fästingar! Det förstör
+            givetvis inte köttet men tänk på att använda handskar vid ev.
+            hantering och tvätta dig efteråt!<br />
+            Vår amerikanska motsvarighet har mer information, dock på engelska:
+          </p>
+          <!--En knapp med beskrivande text, länkar användaren till vår inspirationssida-->
+          <a
+            href="https://www.americanoutdoor.guide/news/dining-at-the-roadkill-cafe/"
+            target="_blank"
+          >
+            <button class="LÄNK">American Outdoor Dining Guide</button></a
+          >
+        </div>
+
+        <button class="klicklista">
+          Kommer allt på menyn från naturen / vägen?
+        </button>
+        <div class="panel">
+          <p>
+            Givetvis behöver vi komplettera med kött från jakt och grönsaker
+            från den lokala bonden! Men grundkonceptet är att inget ska gå till
+            spillo.
+          </p>
+        </div>
+
+        <button class="klicklista">Kan man få sitt vilt medium rare?</button>
+        <div class="panel">
+          <p>
+            För att undvika kontaminering och eliminera ev. smitta tillagas allt
+            väg-kött till vällagat, "well done". Endast jagat vilt som
+            kontrollerats och nötkött som tillagas i en separat del i köket går
+            att få enligt önskemål, fråga personalen! Vi har ett varierande
+            utbud så det beror på tillfälle.
+          </p>
+        </div>
+
+        <button class="klicklista">
+          Får man ha en sån här restaurang i Sverige?
+        </button>
+        <div class="panel">
+          <p>
+            Det är en byråkratisk djungel och många regler att hålla reda på,
+            detta är en skoluppgift och vi har valt att anta att det råder samma
+            regelverk som i USA och Australien, så svaret vi ger är NEJ för
+            närvarande.
+          </p>
+        </div>
+        <script type="text/javascript" src="JS/DropMenyJS.js"></script>
+        <!--För säkerhets skull, typbeskrivande-->
+      </main>
+
+      <footer>
+        <!--Sidfoten för hemsidan så som sig bör-->
+        <p>
+          Copyright &copy; Pang i Grillen 2021 | Website design by Tomtemors
+          Gastarlåda AB
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

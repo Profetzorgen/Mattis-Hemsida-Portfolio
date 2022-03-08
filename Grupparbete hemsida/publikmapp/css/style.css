@@ -1,0 +1,317 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    font-size: 14px;
+    height: 100%;
+}
+
+body {
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;    
+}
+
+
+.wrapper{
+    background-color: black;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+}
+
+header {
+    background-color: #e3a157;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    grid-area: header;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.logo {
+    padding: 15px;
+    text-shadow:2px 2px 4px rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 28px;
+
+}
+
+main {
+    background-color: black;
+    padding-top: 100px;
+    color: blanchedalmond;
+    font-size: 14px;
+}
+
+
+
+h2 {
+    color: blanchedalmond;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+}
+¨
+h3 {
+    color: blanchedalmond;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+/*Här börjar mobil dropdown meny. Rör inte!!! */
+
+#menubox{
+    display: none;
+}
+
+nav {
+    background-color: #e3a157; /* bakgrundfärgen på dropdown menyn i mobil-versionen */
+    position: absolute;   
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 200ms ease-out;
+}
+
+
+nav a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    font-weight: bold;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul a {
+    display: block;
+    padding: 30px;
+}
+
+nav ul a:hover {
+    background-color: #E7B071;
+    color: #222222; 
+}
+
+#menubox:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+#menubox:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 200ms ease-out 100ms;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e3a157; /* bakgrundfärgen på hamburger-meny-ikonen */
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*här börjar hamburger menu bild animation med css */
+
+.menu-icon .nav-icon {
+    background: white; /* färgen på strecken i hamburger-meny-ikonen */
+    display: block;
+    height: 3px;
+    width: 20px;
+    position: relative;   
+}
+
+.menu-icon .nav-icon::before {
+    background: white; /* färgen på strecken i hamburger-meny-ikonen */
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 200ms ease-out;
+    top: 6px;
+}
+
+.menu-icon .nav-icon::after {
+    background: white; /* färgen på strecken i hamburger-meny-ikonen */
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 200ms ease-out;
+    top: -6px;
+}
+
+
+#menubox:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+#menubox:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+#menubox:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/*Här slutar kod för dropdown meny. */
+
+main {
+    grid-area: main;
+    background: black;
+    text-align: center;
+    
+}
+
+
+footer {
+    background-color: #e3a157;
+    font-size: 10px;
+    text-align: center;
+    min-height: 30px;
+    grid-area: footer;
+    padding: 5px;
+    border-top: black 1px solid;
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .wrapper, header {
+        max-width: 1440px;
+    }
+
+    nav {
+        all: unset;
+        background-color: black;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e3a157;
+    }
+    
+    nav ul li {
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+    nav ul a{
+        padding: 10px;
+        opacity: 1;
+    }
+
+    .logo {
+        font-size: 30px;
+    
+    }
+    
+    main {
+        padding-top: 130px;
+        font-size: 16px;
+    }
+    
+    
+    
+    h2 {
+        font-size: 28px;
+    }
+    ¨
+    h3 {
+        font-size: 26px;
+    }
+
+
+}
+
+/*Desktop */
+@media screen and (min-width: 1024px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    .wrapper, header {
+        max-width: 1440px;
+    }
+
+    main {
+        padding-top: 170px;
+        font-size: 18px;
+    }
+
+    nav {
+        all: unset;
+        background-color: black;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e3a157; 
+    }
+    
+    nav ul li {
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+    nav ul a{
+        padding: 20px;
+        opacity: 1;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 32px;
+    
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    ¨
+    h3 {
+        font-size: 28px;
+    }
+
+
+}
+

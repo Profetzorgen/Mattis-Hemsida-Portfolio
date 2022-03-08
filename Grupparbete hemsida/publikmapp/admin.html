@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Pang i grillen</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <!-- Links -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <!-- Script -->
+    <script src="./JS/adminKlient.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="logo">PANG I GRILLEN</h1>
+
+        <input type="checkbox" id="menubox" />
+        <label class="menu-icon" for="menubox"
+          ><span class="nav-icon"></span
+        ></label>
+        <!-- Navigation bar -->
+        <nav>
+          <ul class="menu">
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./meny.html">Meny</a></li>
+            <li><a href="./bokning.html">Bokning</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- Login form -->
+        <h2>Administratör | Logga in</h2>
+        <section id="login-form">
+          <form action="/admin" method="post">
+            <label for="username">* Användarnamn:</label>
+            <input
+              maxlength="40"
+              minlength="4"
+              name="username"
+              type="text"
+              id="username"
+              placeholder="PangAdmin"
+              autocomplete="off"
+              required
+            />
+            <label for="password">* Lösenord:</label>
+            <input
+              name="password"
+              type="password"
+              id="password"
+              placeholder="Blåsfisk8Tvärsur"
+              required
+            />
+            <p>* Fältet är obligatoriskt</p>
+            <button type="submit">Skicka</button>
+          </form>
+        </section>
+        <!-- Server output on successful login -->
+        <section id="server-output">
+        <p>Logga in för att se bokningar.</p>
+        </section>
+      </main>
+      <footer>
+        Copyright &copy; Pang i Grillen 2021 | Website design by Tomtemors
+        Gastarlåda AB
+      </footer>
+    </div>
+  </body>
+</html>

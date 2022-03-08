@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+.main-bokning {
+  background-color: black;
+}
+
+.titel-bokning {
+  padding-bottom: 10px;
+  color: blanchedalmond;
+}
+
+.main-bokning {
+  background-color: black;
+}
+
+#booking {
+  padding-top: 20px;
+  background: blanchedalmond;
+
+  background-image: url(../images/roe-deer.jpg);
+
+  width: 90%;
+  margin: 0 auto;
+  height: 560px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+
+#booking fieldset {
+  margin: 0 auto;
+  padding: 0px 30px 10px 30px;
+  border: solid 1px black;
+  border-radius: 8px;
+  width: 70%;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.795);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.726);
+}
+
+#booking div {
+  margin-top: 1.5rem;
+}
+
+#booking label {
+  display: block;
+  padding: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#booking label:first-of-type {
+  margin-top: 0;
+}
+
+#booking input {
+  padding: 0.5em;
+  border: silver solid 1px;
+  background: white;
+  border-radius: 8px;
+}
+
+#booking input:focus::placeholder {
+  color: transparent;
+}
+
+#booking input::placeholder {
+  color: grey;
+}
+
+#booking input[type="number"] {
+  width: 5em;
+}
+
+#booking input[type="text"] {
+  width: 17em;
+}
+
+#booking input[type="email"] {
+  width: 17em;
+}
+
+#submit {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: #e3a157;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid #222;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+#submit:hover {
+  background-color: #e7b071;
+  color: white;
+}
+
+form #send {
+  padding: 10px;
+}
+
+@media screen and (min-width: 481px) {
+  #booking {
+    height: 650px;
+    padding-top: 50px;
+  }
+  .titel-bokning {
+    padding: 15px;
+  }
+
+  #booking fieldset {
+    padding: 10px 60px 30px 60px;
+  }
+
+  #booking input[type="submit"] {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .background {
+    height: 95%;
+  }
+  .titel-bokning {
+    padding: 0 20px 20px 20px;
+  }
+
+  #booking {
+    padding-top: 50px;
+    height: 650px;
+  }
+
+  #booking fieldset {
+    margin: 10px auto;
+    padding: 30px 10px 30px 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 70%;
+  }
+
+  #booking div {
+    max-width: 480px;
+    margin: 20px auto;
+    display: flex;
+  }
+
+  #booking label {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    width: 10em;
+    padding-left: 0.5em;
+  }
+
+  #booking input {
+    padding: 0.5em;
+    font-size: 16px;
+    flex-basis: auto;
+  }
+
+  #booking input[type="submit"] {
+    padding: 20px 40px;
+  }
+
+  form #send {
+    margin-top: 40px;
+    padding: 10px;
+    justify-content: center;
+  }
+}

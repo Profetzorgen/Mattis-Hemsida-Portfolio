@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pang i grillen</title>
+    <meta name="description" content="Best roadkill restaurant in Sweden" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/meny.css" />
+
+    <!-- Scripts -->
+    <script src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").carousel();
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="logo">PANG I GRILLEN</h1>
+
+        <input type="checkbox" id="menubox" />
+        <label class="menu-icon" for="menubox">
+          <span class="nav-icon"></span
+        ></label>
+        <nav>
+          <ul class="menu">
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./meny.html">Meny</a></li>
+            <li><a href="./bokning.html">Bokning</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <h2 class="titel-meny">Meny</h2>
+
+        <article class="col-1">
+          <!-- Här kommer menyn att ligga-->
+
+          <h3>Grävlingskebab</h3>
+          <p>Grävlingskött, pommes frites/ris, sallad, valfri sås (200 kr)</p>
+          <hr />
+
+          <h3>Bambi på hal sås</h3>
+          <p>Rådjursstek, potatis, kantarellsås (250 kr)</p>
+          <hr />
+
+          <h3>Segstartad and med timjansås och potatis</h3>
+          <p>Andkött, potatis, timjansås, sallad (200 kr)</p>
+          <hr />
+
+          <h3>Hack-kyckling</h3>
+          <p>Kyckling i curry-gryta med ris (170 kr)</p>
+          <hr />
+
+          <p>
+            <em
+              >Alla rätter går att tillagas med glutenfria och laktosfria
+              alternativ om så önskas</em
+            >
+          </p>
+        </article>
+
+        <section class="col-2">
+          <!-- Här kommer knapparna att ligga-->
+
+          <form action="https://www.foodora.se/" target="_blank">
+            <button class="button button1" type="submit">Beställning</button>
+          </form>
+
+          <form action="./bokning.html">
+            <button class="button button2" type="submit">Bokning</button>
+          </form>
+        </section>
+
+        <!-- Carousel of product images
+      Reference: https://getbootstrap.com/docs/4.5/components/carousel/ -->
+        <section class="col-3">
+          <div
+            id="carouselSlideshow"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselSlideshow"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselSlideshow" data-slide-to="1"></li>
+              <li data-target="#carouselSlideshow" data-slide-to="2"></li>
+              <li data-target="#carouselSlideshow" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#"
+                  ><img
+                    src="./images/kebab.png"
+                    class="d-block w-100"
+                    alt="Grävlingskebab"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"
+                  ><img
+                    src="./images/deer.png"
+                    class="d-block w-100"
+                    alt="Rådjur"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"
+                  ><img src="./images/and.png" class="d-block w-100" alt="And"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"
+                  ><img
+                    src="./images/kyckling.png"
+                    class="d-block w-100"
+                    alt="Hack-kyckling"
+                /></a>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselSlideshow"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselSlideshow"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        Copyright &copy; Pang i Grillen 2021 | Website design by Tomtemors
+        Gastarlåda AB
+      </footer>
+    </div>
+  </body>
+</html>

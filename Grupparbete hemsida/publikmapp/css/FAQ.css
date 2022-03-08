@@ -1,0 +1,131 @@
+/* 
+Färdigt
+*/
+
+main {
+
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.klicklista {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 14px;
+}
+
+
+.active, .klicklista:hover {
+  background-color: blanchedalmond;
+}
+.logo{
+  padding: 15px;
+  text-shadow:2px 2px 4px rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.panel {
+  
+  padding: 0 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  max-height: 0;
+  /*display: none;*/
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 14px;
+}
+
+.FAQ-titel{
+  text-align: center;
+  padding-bottom: 60px;
+ 
+}
+
+.bilder{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+.IntroFAQ{
+  
+  padding-top: 20px;
+}
+/*Länkknappen i fråga */
+.LÄNK{
+  background-color: white;
+  transition: font-size 0.2s ease-out;
+  color: darkblue;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.LÄNK:hover{
+  background-color: blanchedalmond;
+}
+/* Vid större skärm än 481 ändras storleken på bland annat
+text */
+@media  screen and (min-width: 481px) {
+  
+  main{
+    font-size: 16px;
+  }
+  .klicklista{
+    font-size: 16px;
+  }
+  .logo{
+    font-size: 30px;
+  }
+  .panel{
+    font-size: 16px;
+  }
+  .LÄNK{
+    font-size: 16px;
+    transition: font-size 0.2s ease-out;
+  }
+}
+
+/* Vid större skärm än 1024 ändras storleken på vissa attribut
+så som text */
+@media screen and (min-width: 1024px) {
+
+  main {
+    /*
+    Gamla manuella paddingen, sparar för säkerhets skull!
+    padding-top: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+    */
+    text-align: left;
+    font-size: 18px;
+  }
+  .klicklista{
+    font-size: 18px;
+  }
+  .logo{
+    font-size: 32px;
+  }
+  .panel{
+    font-size: 18px;
+  }
+  .LÄNK{
+    font-size: 18px;
+    transition: font-size 0.2s ease-out;
+  }
+}

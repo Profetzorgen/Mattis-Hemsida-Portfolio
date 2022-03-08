@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pang i grillen</title>
+    <meta name="description" content="Best roadkill restaurant in Sweden" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="newlogo">PANG I GRILLEN</h1>
+
+        <input type="checkbox" id="menubox" />
+        <label class="menu-icon" for="menubox"
+          ><span class="nav-icon"></span
+        ></label>
+        <nav>
+          <ul class="menu">
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./meny.html">Meny</a></li>
+            <li><a href="./bokning.html">Bokning</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="video-container">
+          <br /><br /><br />
+          <!-- bakgrundsfilmen -->
+          <video autoplay muted loop id="bgVideo">
+            <source src="./images/Steak-16406.mp4" type="video/mp4" />
+          </video>
+
+          <section class="start-text">
+            <h2>PANG I GRILLEN</h2>
+            <p id="nametag_two">SLOW FOOD FOR FAST DRIVERS</p>
+            <br />
+            <p>
+              Välkommen till Pang i Grillen!<br />
+              En gourmetrestaurang där<br />
+              roadkills med hjälp av våra kockars skills blir till thrills and
+              chills.
+            </p>
+          </section>
+
+          <button id="myBtn" onclick="myFunction()">Pausa video</button>
+          <script>
+            var video = document.getElementById("bgVideo");
+            var btn = document.getElementById("myBtn");
+
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pausa video";
+              } else {
+                video.pause();
+                btn.innerHTML = "Starta video";
+              }
+            }
+          </script>
+        </div>
+        <!-- END VIDEO CONTAINER-->
+
+        <article class="forts-text">
+          <h3>Pang i Grillen</h3>
+          På Pang i Grillen serverar vi mat som passar alla magar. Vår affärside
+          är att du fixar biffen, vi lagar den! <br />
+          Kulturen med att laga och äta sk. "Road Kills" kommer från USA och
+          Australien och nu finns det även i Sverige!<br />
+          Givetvis följer vi alla lokala lagar och förordningar och har ett nära
+          samarbete med hälsovårdsmyndigheten. Allt för att du äntligen ska
+          kunna äta grävlingen du körde på och inte bara lämna den åt sitt öde!.
+          Givetvis kan du även äta här om du inte har med dig eget kött! Vi får
+          in mycket olika kött och har en ständing föränderlig meny så ta en
+          titt.
+
+          <figure>
+            <img src="./images/jpg.jpg" alt="Roadkill-favorit" id="fig_one" />
+            <figcaption>
+              Em av de våra mer exklusiva rätter är smörstekt ekorre <br />som
+              vi har på menyn ibland.<br />
+              Fråga personalen om du är sugen, den är värd att prova.
+            </figcaption>
+          </figure>
+        </article>
+      </main>
+      <footer>
+        Copyright &copy; Pang i Grillen 2021 | Website design by Tomtemors
+        Gastarlåda AB
+      </footer>
+    </div>
+  </body>
+</html>

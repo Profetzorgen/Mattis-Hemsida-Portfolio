@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Pang i grillen</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <!-- Links -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/kontakt.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="logo">PANG I GRILLEN</h1>
+
+        <input type="checkbox" id="menubox" />
+        <label class="menu-icon" for="menubox"
+          ><span class="nav-icon"></span
+        ></label>
+        <!-- Navigation bar -->
+        <nav>
+          <ul class="menu">
+            <li><a href="./index.html">Start</a></li>
+            <li><a href="./meny.html">Meny</a></li>
+            <li><a href="./bokning.html">Bokning</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- Contact information text -->
+        <section class="contact-info">
+          <h2>Kontakta oss</h2>
+          <div class="open">
+            <h3>Öppettider:</h3>
+            <p>
+              Mån-fre 10:00-20:00 <br />
+              Lör-sön 10:00-22:00
+            </p>
+          </div>
+          <div class="number">
+            <h3>Telefonnummer:</h3>
+            <p>012-345678</p>
+          </div>
+          <div class="address">
+            <h3>Adress:</h3>
+            <p>
+              Hungrigvägen 42 <br />
+              123 45 - Smaskens
+            </p>
+          </div>
+          <div class="info-mail-below">
+            <p>
+              Har du obesvarade frågor gällande vår verksamhet eller önskar du
+              lämna feedback? <br />
+              Tveka då inte att höra av dig till oss genom kontaktformuläret
+              nedan så återkommer vi till dig så snart vi kan inom upp till 24h
+              (vardagar)!
+            </p>
+          </div>
+        </section>
+        <!-- Contact form -->
+        <section class="contact-form">
+          <form>
+            <label for="subject">* Ämne: </label>
+            <select name="subject" id="subject" required>
+              <option value="">Välj ett alternativ</option>
+              <option value="first-option">
+                Frågor om bokning/beställning
+              </option>
+              <option value="second-option">Frågor om specifik maträtt</option>
+              <option value="third-option">Övriga frågor</option>
+              <option value="fourth-option">Feedback</option>
+            </select>
+            <label for="name">* Namn: </label>
+            <input
+              maxlength="40"
+              minlength="4"
+              name="name"
+              type="text"
+              id="name"
+              placeholder="Förnamn Efternamn"
+              required
+            />
+            <label for="email">* E-postadress: </label>
+            <input
+              name="email"
+              type="email"
+              id="email"
+              placeholder="exempel@email.com"
+              required
+            />
+            <label for="message">* Meddelande: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Skriv ditt meddelande här"
+              required
+            ></textarea>
+            <p>* Fältet är obligatoriskt</p>
+            <button type="submit">Skicka</button>
+          </form>
+        </section>
+        <!-- Social media links -->
+        <section class="social-media-links">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </section>
+      </main>
+      <footer>
+        Copyright &copy; Pang i Grillen 2021 | Website design by Tomtemors
+        Gastarlåda AB
+      </footer>
+    </div>
+  </body>
+</html>

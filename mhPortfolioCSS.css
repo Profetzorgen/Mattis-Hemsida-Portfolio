@@ -1,0 +1,83 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#ListaStartSida{
+  padding: 10px;
+  
+}
+.SidoMenyUl{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+.SidoMenyUl a{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.SidoMenyUl a{
+  border-bottom: 1px solid black;
+}
+.SidoMenyUl li :hover{
+  background-color: #555;
+  color: white;
+}
+.LIAul a {
+  font-weight: bolder;
+  display: block;
+  padding: 8px 16px;
+}
+.LIAul li :hover{
+  
+  background-color: #04AA6D;
+}
+.SidoMenyDrop {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 14px;
+}
+
+.active, .SidoMenyDrop:hover {
+  background-color: blanchedalmond;
+}
+.panel {
+  
+  padding: 0 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  max-height: 0;
+  /*display: none;*/
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 14px;
+}
