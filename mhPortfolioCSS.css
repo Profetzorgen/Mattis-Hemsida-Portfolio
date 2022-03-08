@@ -52,7 +52,7 @@
 }
 .LIAul li :hover{
   
-  background-color: #04AA6D;
+  background-color: lightblue;
 }
 .SidoMenyDrop {
   color: #444;
@@ -67,7 +67,7 @@
 }
 
 .active, .SidoMenyDrop:hover {
-  background-color: blanchedalmond;
+  background-color: lightblue;
 }
 .panel {
   
@@ -80,4 +80,9 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   font-size: 14px;
+}
+.sidfot{
+  background-color: lightblue;
+  padding: 3px;
+  margin-top: 20px;
 }
